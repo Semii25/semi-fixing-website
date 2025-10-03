@@ -1,0 +1,169 @@
+Body { 
+
+  Background-color: rgb(0, 195, 255); 
+
+  Font-family: impact, haettenschweiler, ‘arial narrow bold’, sans-serif; 
+
+  Font-size: 16px; 
+
+  Font-weight: lighter; 
+
+  Margin: 20px; 
+
+  Border: 5px double rgb(236, 234, 234); 
+
+  Padding: 10px; 
+
+} 
+
+H1 { 
+
+  Font-family: georgia, ‘times new roman’, times, serif; 
+
+  Font-style: oblique; 
+
+  Font-size: 2rem; 
+
+  Color: azure; 
+
+  Font-weight: bold; 
+
+  Background-color: rgb(58, 56, 56); 
+
+  Text-align: center; 
+
+  Text-transform: uppercase; 
+
+  Text-decoration: wavy; 
+
+} 
+
+Nav a { 
+
+  Padding: 10px; 
+
+  Border: 2px solid #fff; 
+
+  Margin: 10px; 
+
+  Text-decoration: none; 
+
+  Background-color: rgb(36, 31, 31); 
+
+  Color: #fff; 
+
+} 
+
+Fieldset { 
+
+  Width: 350px; 
+
+  Border: 3px solid gray; 
+
+  Border-radius: 10px; 
+
+  Margin: 20px 0 20px 300px; 
+
+} 
+
+Legend { 
+
+  Background-color: grey; 
+
+  Text-transform: uppercase; 
+
+  Padding: 10px; 
+
+} 
+
+Input { 
+
+  Padding: 5px; 
+
+  Margin: 5px; 
+
+  Border-radius: 10px; 
+
+} 
+
+#submit { 
+
+  Border-radius: 10px; 
+
+  Margin-left: 100px; 
+
+  Padding: 5px; 
+
+  Border: 3px solid gray; 
+
+} 
+
+#reset { 
+
+  Border-radius: 10px; 
+
+  Margin-left: 20px; 
+
+  Padding: 5px; 
+
+  Border: 3px solid gray; 
+
+} 
+
+.layout { 
+
+  Display: grid; 
+
+  Grid-template-columns: repeat(3,1fr); 
+
+  Gap: 10px; 
+
+  Margin: 20px 0; 
+
+} 
+
+.layout div { 
+
+  Background: white; 
+
+  Padding: 20px; 
+
+  Border: 1px solid #ccc; 
+
+  Text-align: center; 
+
+} 
+
+.layout div:hover { 
+
+  Background: lightblue; 
+
+  Transform: translateY(-3px); 
+
+} 
+
+@media (max-width:800px){.layout{grid-template-columns:repeat(2,1fr);}} 
+
+@media (max-width:500px){ 
+
+  .layout{grid-template-columns:1fr;} 
+
+  Body{font-size:14px;} 
+
+  H1{font-size:1.5rem;} 
+
+} 
+
+P{margin-bottom:1em;} 
+
+.container{width:90%;} 
+
+Img { 
+
+  Max-width: 100%; 
+
+  Height: auto; 
+
+  Border-radius: 10px; 
+
+} 
