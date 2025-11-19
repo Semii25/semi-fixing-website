@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Products - Semi Fixing</title>
+  <title>Products - Semi Fixing | Car Parts & Accessories</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO meta (explicit so search engines see them immediately) -->
+  <meta name="description" content="Semi Fixing — quality car parts, tyres, batteries, windscreens, brake pads and more.">
+  <meta name="keywords" content="car parts, tyres, batteries, windscreens, brake pads, spark plugs, Semi Fixing, Mabopane">
+
+  <!-- Main stylesheet -->
   <link rel="stylesheet" href="CSS/style.css">
+
+  <!-- Enhancements (lightbox, search suggestions, validation, map) -->
+  <link rel="stylesheet" href="CSS/enhancements.css">
 </head>
 <body>
 
@@ -21,60 +30,77 @@
 
 <section class="hero">
   <h1>Our Products & Car Parts</h1>
-  <p>We provide quality car parts and accessories. See the images below:</p>
+  <p>We provide quality car parts and accessories. Use the search box below to find products quickly or click any image to open the gallery.</p>
 </section>
 
-<section class="layout">
-  <div>
+<!-- SEARCH: placed above the product grid (Option A) -->
+<div style="width:90%; max-width:900px; margin:16px auto; text-align:center;">
+  <input id="searchBox" type="search" placeholder="Search products (e.g. battery, tyres, windscreens)" aria-label="Search products" style="width:70%; padding:10px; border-radius:6px; border:1px solid #ccc;">
+</div>
+
+<section class="layout" id="productList">
+  <div data-lat="-25.8271" data-lng="28.2473">
     <h3>Car Battery</h3>
     <img src="IMAGES/Halfords-HB075-Lead-Acid-12V-Car-Battery-3-Year-Guarantee.webp" alt="Car Battery">
   </div>
-  <div>
+
+  <div data-lat="-25.8275" data-lng="28.2468">
     <h3>Tyres & Wheels</h3>
     <img src="IMAGES/New-Tyres-640x454.jpeg" alt="Tyres & Wheels">
   </div>
+
   <div>
     <h3>Engine Oils & Filters</h3>
     <img src="IMAGES/blog-13.jpg" alt="Engine Oils & Filters">
   </div>
+
   <div>
     <h3>Brake Pads</h3>
     <img src="IMAGES/The-Importance-of-Timely-Brake-Pad-Replacement-for-Vehicle-Safety-1024x512.jpeg" alt="Brake Pads">
   </div>
+
   <div>
     <h3>Spark Plugs</h3>
     <img src="IMAGES/blog-17.5.jpg" alt="Spark Plugs">
   </div>
+
   <div>
-    <h3> Car Windscreen</h3>
+    <h3>Car Windscreen</h3>
     <img src="IMAGES/repair-1.jpeg" alt="Car Windscreen">
   </div>
-    <div>
-    <h3>CAR BUMPERS</h3>
-    <img src="IMAGES/download bum.jpg" alt="CAR BUMPERS">
+
+  <div>
+    <h3>Car Bumpers</h3>
+    <img src="IMAGES/download bum.jpg" alt="Car Bumpers">
   </div>
-    <div>
+
+  <div>
     <h3>Exhaust</h3>
     <img src="IMAGES/images ex.jpg" alt="Exhaust">
   </div>
 </section>
 
-<h2>PRODUCTS PRICES</h2>
+<h2>PRODUCT PRICES</h2>
 <table>
-  <tr><th>CAR BATTERY</th><th>PRICE FROM: R4000</th></tr>
-  <tr><th>TYRES & WHEELS</th><th>PRICE FROM: R2000</th></tr>
-  <tr><th>ENGINE OILS & FILTERS</th><th>PRICE FROM: R1500</th></tr>
-  <tr><th>BRAKE PADS</th><th>PRICE FROM: R500</th></tr>
-  <tr><th>SPARK PLUGS</th><th>PRICE FROM: R1000</th></tr>
-   <tr><th>CAR WINDSCREEN</th><th>PRICE FROM: R5000</th></tr>
-    <tr><th>CAR BUMPERS</th><th>PRICE FROM: R2500</th></tr>
-     <tr><th>EXHAUST</th><th>PRICE FROM: R1000</th></tr>
+  <tr><th>Car Battery</th><td>From R4000</td></tr>
+  <tr><th>Tyres & Wheels</th><td>From R2000</td></tr>
+  <tr><th>Engine Oils & Filters</th><td>From R1500</td></tr>
+  <tr><th>Brake Pads</th><td>From R500</td></tr>
+  <tr><th>Spark Plugs</th><td>From R1000</td></tr>
+  <tr><th>Car Windscreen</th><td>From R5000</td></tr>
+  <tr><th>Car Bumpers</th><td>From R2500</td></tr>
+  <tr><th>Exhaust</th><td>From R1000</td></tr>
 </table>
 
 <footer>
   <p>&copy; <span id="currentYear"></span> Semi Fixing</p>
 </footer>
 
-<script src="JAVA SCRIPT/script.js"></script>
+<!-- Core site script (your original behaviors) -->
+<script src="JS/script.js" defer></script>
+
+<!-- Enhancements script (injects lightbox, search suggestions, map, validation) -->
+<script src="JS/enhancements.js" defer></script>
 </body>
 </html>
+
